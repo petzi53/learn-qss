@@ -1,6 +1,7 @@
 rmd_files:
     - "index.Rmd"
     - "01-intro.Rmd"
+    - "95-blocks.Rmd"
     - "97-references.Rmd"
 language:
   label:

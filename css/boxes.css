@@ -9,16 +9,25 @@
   --stop:           #DC3545;
   --stop-bg:        #f2dede;
   --stop-fg:        #b94a48;
-  --warning-bg:     #fcf8e3;
-  --warning-fg:     #d1b37c;
+  --warning-fg:     #FFA500; /* Orange    */
+  --warning-bg:     #FFE4B2;
   --info:           #25A2B8;
   --info-bg:        #D9EDF7;
   --info-fg:        #317EAC;
+  --todo-bg:        #F5F5F5;
+  --question-fg:    #3CB371;
+  --question-bg:    #98FB98;
+  --orange-fg:      #FFA500; /* Orange    */
+  --orange-bg:      #FFE4B2;
+  --yellow-bg:      #fcf8e3;
+  --yellow-fg:      #d1b37c;
 }
 
 /* Colored boxes with icons ----------------------------------------------- */
 
-.successbox, .infobox, .warningbox, .stopbox, .todobox, .errorbox {
+.successbox, .infobox, .warningbox, .stopbox, .todobox, .errorbox,
+.downloadbox, .linkbox, .ideabox, .bookbox, .questionbox,
+.orangebox, .yellowbox, .faqbox {
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -37,11 +46,31 @@
   background-image: url("../img/icons/info.png");
 }
 
+.downloadbox {
+  border: 2px solid var(--info-fg);
+  background: var(--info-bg) 5px center/3em no-repeat;
+  background-image: url("../img/icons/cloud.png");
+}
+
+.linkbox {
+  border: 2px solid var(--info-fg);
+  background: var(--info-bg) 5px center/3em no-repeat;
+  background-image: url("../img/icons/website.png");
+}
+
+.bookbox {
+  border: 2px solid var(--info-fg);
+  background: var(--info-bg) 5px center/3em no-repeat;
+  background-image: url("../img/icons/book.png");
+}
+
 .warningbox {
   border: 2px solid var(--warning-fg);
   background: var(--warning-bg) 5px center/3em no-repeat;
   background-image: url("../img/icons/warning.png");
 }
+
+
 
 .stopbox {
   border: 2px solid var(--stop-fg);
@@ -51,20 +80,49 @@
 
 .todobox {
   border: 2px solid black;
-  background: pink 5px center/3em no-repeat;
-  background-image: url("../img/icons/todo.png");
+  background: var(--todo-bg) 5px center/3em no-repeat;
+  background-image: url("../img/icons/to-do-list.png");
 }
+
+.faqbox {
+  border: 2px solid black;
+  background: var(--todo-bg) 5px center/3em no-repeat;
+  background-image: url("../img/icons/faq.png");
+  color: var(--primary);
+}
+
+p.faq {
+  color: FireBrick;
+  font-style: italic;
+}
+
+.ideabox {
+  border: 2px solid var(--yellow-fg);
+  background: var(--yellow-bg) 5px center/3em no-repeat;
+  background-image: url("../img/icons/idea.png");
+  color: FireBrick;
+}
+
+.questionbox {
+  border: 2px solid black;
+  background: WhiteSmoke 5px center/3em no-repeat;
+  background-image: url("../img/icons/question-mark.png");
+  color: var(--primary);
+}
+
 
 .errorbox {
   border: 2px solid var(--stop-fg);
   background: var(--stop-bg) 5px center/3em no-repeat;
   background-image: url("../img/icons/error.png");
+  color: FireBrick;
 }
 
 
 /* Colored boxes without icons -------------------------------------------- */
 
-.greenbox, .bluebox, .orangebox, .redbox, .greybox, .graybox {
+.greenbox, .bluebox, .yellowbox, .redbox, .greybox, .graybox,
+.orangebox, .yellowbox {
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 10px;
@@ -79,9 +137,14 @@
   background-color: var(--success-bg); /* #d9ffe9; */
 }
 
+.yellowbox {
+  background-color: var(--yellow-bg); /* #ffeedf; */
+}
+
 .orangebox {
   background-color: var(--warning-bg); /* #ffeedf; */
 }
+
 
 .redbox {
   background-color: var(--stop-bg);

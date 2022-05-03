@@ -1,3 +1,3 @@
 # Learning "Quantitative Social Science"
 
-This repo serves as my personal notebook by reading "Quantitative Social Science" by Kosuke Imai.
+This repo collects my personal notes while reading the book [Quantitative Social Science](https://qss.princeton.press/) (qss) by Kosuke Imai.

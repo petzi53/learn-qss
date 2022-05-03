@@ -1,1 +1,132 @@
-# Hello bookdown 
+# Introduction to R
+
+## Arithmetic operations
+
+- Using R as calculator
+- Examples with [arithmetic operators](https://www.tutorialgateway.org/r-arithmetic-operators/)
+
+```{r}
+# Example for R Arithmetic Operators
+a <- 16
+b <- 3
+add <- a + b
+sub = a - b
+multi = a * b
+division = a / b
+Integer_Division = a %/% b
+exponent = a ^ b
+modulus = a %% b
+
+print(paste("Addition of two numbers 16 and 3 is : ", add))
+print(paste("Subtracting Number 3 from 16 is : ", sub))
+print(paste("Multiplication of two numbers 16 and 3 is : ", multi))
+print(paste("Division of two numbers 16 and 3 is : ", division))
+print(paste("Integer Division of two numbers 16 and 3 is : ", Integer_Division))
+print(paste("Exponent of two numbers 16 and 3 is : ", exponent))
+print(paste("Modulus of two numbers 16 and 3 is : ", modulus))
+```
+
+The book text demonstrates only some of the arithmetic operators.
+
+Everything is an object/function! For instance:
+
+```{r ops}
+`+`(2,5)
+```
+
+Arithmetic operators are just one group of five different types of operators:
+
+- Arithmetic operators
+- Assignment operators
+- Comparison operators
+- Logical operators
+- Miscellaneous operators
+
+See compilation of operators at [tutorialspoint](https://www.tutorialspoint.com/r/r_operators.htm), [datamentor](https://www.datamentor.io/r-programming/operator/) and [w3schools](https://www.w3schools.com/r/r_operators.asp).
+
+And what about the pipe operator?
+
+::: {.infobox}
+The challenge: How to explain some (most) of the operators during an ongoing research investigation? 
+The remainder of unexplained operators should be addressed with the interactive tutorials.
+:::
+
+- Practical usage of the assignment operator(s) is easy because we need it all the time.
+- Comparison and logical operators are to be explained with the `filter()` command. 
+- But what could be a practical example with arithmetic operators? A calculation inside mutate to generate a new variable/column? I do not need all of them. Maybe +, -, *, / would be for the first take enough? But it shouldn't be forced. Perhaps the usage as demonstration for R as calculator is enough? It would be a good start to become acquainted with R.
+
+## Objects
+
+- Naming objects
+- Assigning values to objects —> assignment operator(s)
+- `class()` function
+- Printing the value of objects 
+    - just the name,
+        - naming rules
+        - case sensitivity
+        - camelCase versus snake_case
+        - see [slides by Jenny Bryan](https://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf)
+    - parentheses around the function
+    - `print()` function
+    - `cat()` 
+        - outputing objects, 
+        - concatenating the representations
+        - performs much less conversion than `print()`.
+    - `glue()` from the {glue} package
+        - expressions enclosed by braces will be evaluated as R code 
+        - long strings are broken by line and concatenated together
+        - leading whitespace and blank lines from the first and last lines are automatically trimmed
+
+## Vectors
+
+- demonstrate usefulness
+- one-dimensional array simply represents a collection of information stored in a specific order
+- function `c()`, c stands for for concatenate
+- indexing of vectors
+- working with vectors: add/multiply one value, another vector same length, sequencing with colon
+etc.
+
+    
+
+## Functions
+
+- using some basic functions: length, min, max, range, mean, sd, sum etc.
+- using some other important functions: seq, names, 
+- how to call functions: parameters, default values etc.
+- create functions: example of special summary-function.
+
+## Data files
+
+- `read_csv()` instead of `read.csv()` (other of this family)
+- reading data in with RStudio -> get code (for reproducibility!)
+- `here()` function instead of setting working directory with `setwd()`
+- RStudio projects
+- understanding data
+    - str()
+    - using tibble() instead of data.frame()
+    - names(), nrow(), ncol(), dim()
+    - glimpse() 
+    - random selection of some rows by using `slice_sample()`
+    - skim() of {skimr} as alternative to summary()
+
+
+## Saving objects
+
+- `save.image()` -> **NO!**
+- save(), write_delim family e.g., `write_csv()`
+- configure RStudio to prevent saving image
+- `saveRDS()`, `readRDS()` instead of `save()` and `load()`: See J[enny Bryan's stat545](https://stat545.com/import-export.html)
+
+## Packages
+
+- `install.packages("file_name")`
+- `library(file_name)` 
+
+## Prgramming & learning tips
+
+- script: `source()`
+- RMarkdown: YAML header, chunks, chunks labels
+- workflow: different kinds of executing program code
+- shortcuts for important workflow actions
+- chunk names, incl. reserved "setup" name
+

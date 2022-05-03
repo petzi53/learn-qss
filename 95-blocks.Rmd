@@ -1,0 +1,111 @@
+# Blocks
+
+## Equations
+
+Here is an equation.
+
+\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  (\#eq:binom)
+\end{equation} 
+
+You may refer to using `\@ref(eq:binom)`, like see Equation \@ref(eq:binom).
+
+
+## Theorems and proofs
+
+Labeled theorems can be referenced in text using `\@ref(thm:tri)`, for example, check out this smart theorem \@ref(thm:tri).
+
+::: {.theorem #tri}
+For a right triangle, if $c$ denotes the *length* of the hypotenuse
+and $a$ and $b$ denote the lengths of the **other** two sides, we have
+$$a^2 + b^2 = c^2$$
+:::
+
+Read more here <https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html>.
+
+## Callout blocks
+
+
+The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html
+
+::: {.infobox}
+This is a box for information to emphasize.
+:::
+
+::: {.downloadbox}
+This is a box to offer a download link. In this case it is a <a href="https://www.appsloveworld.com/wp-content/uploads/2018/10/Sample100.csv" target="_blank">link to a test/dummy .csv file</a> opening in a new browser tab.
+:::
+
+
+
+::: {.linkbox}
+This is a box to offer a link. In this case it is a demo reference to [my English weblog Thought Splinters](https://notes.peter-baumgartner.net).
+:::
+
+::: {.bookbox}
+This is a box to offer a link for a reading assignment. In this case it is a [link to my German weblog Gedankensplitter](https://peter.baumgartner.name).
+:::
+
+
+::: {.successbox}
+This is a box for positive feedback.
+:::
+
+::: {.warningbox}
+This is a box to draw attention to something important.
+:::
+
+::: {.stopbox}
+This is a box to stress something what you shouldn't do.
+:::
+
+::: {.todobox}
+This is a box to remind what action is still pendent and should be done.
+:::
+
+::: {.faqbox}
+This is a faq box to list frequently asked questions.
+
+<p class="faq">This is the answer to the faq question.</p>
+:::
+
+::: {.questionbox}
+This is a box to pose a general (meta-)question, which at the moment has no answer.
+:::
+
+::: {.ideabox}
+This is a box to ventilate a new idea.
+:::
+
+::: {.errorbox}
+This is a box for displaying error messages.
+:::
+
+
+## Colored background text boxes
+
+::: {.bluebox}
+This is a blue box. What for?
+:::
+
+
+::: {.greenbox}
+This is a green box. What for?
+:::
+
+::: {.yellowbox}
+This is a yellow box. What for?
+:::
+
+::: {.orangebox}
+This is a orange box. What for?
+:::
+
+::: {.redbox}
+This is a red box. What for?
+:::
+
+::: {.greybox}
+This is a grey box. What for?
+:::
